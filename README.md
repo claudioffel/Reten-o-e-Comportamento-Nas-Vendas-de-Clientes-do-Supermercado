@@ -41,4 +41,4 @@ Período analisado:
 
 📅 Fevereiro, Março e Abril de 2026
 
-![Tabelas](https://site.com/sua-imagem.jpg)
+![Tabelas](Imagens/tabelas.png)
