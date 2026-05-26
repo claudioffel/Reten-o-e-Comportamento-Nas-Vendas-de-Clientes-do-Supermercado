@@ -106,7 +106,7 @@ A análise dos itens mostrou alta participação de cervejas entre os produtos m
 •	risco operacional 
 •	oportunidade de venda cruzada
 
-## - Redução da atividade dos clientes cadastrados
+### - Redução da atividade dos clientes cadastrados
 
 Foi identificada uma diminuição do número de clientes únicos ativos ao longo do trimestre analisado.
 
