@@ -64,6 +64,7 @@ select p.ecf, p.coo, CAST(c.datacupom AS DATE) AS Data_Cupom, c.cliente, p.ean, 
 from PDV_CUPOM_PRODUTOS p inner join pdv_cupom c on p.coo = c.coo and p.ecf = c.ecf and p.datacupom = c.datacupom 
 where c.cliente > 0 and p.cancelado = 0 and p.DATACUPOM > '2026-03-31' AND p.DATACUPOM < '2026-04-22';
 ```
+
 ![Tabelas](Imagens/tabelas.png)
 
 ## - Criação do Dashboard
@@ -71,9 +72,12 @@ where c.cliente > 0 and p.cancelado = 0 and p.DATACUPOM > '2026-03-31' AND p.DAT
 Após a etapa de extração, os dados foram organizados e exportados para planilhas em excel. Em seguida, as bases foram importadas para o Power BI, onde foi realizada a modelagem dos dados, criação de colunas calculadas e desenvolvimento de medidas DAX para construção dos indicadores analíticos. 
 
 Segue abaixo a modelagem feita no power bi, com o objetivo de estruturar os relacionamentos entre as tabelas e permitir análises mais dinâmicas e integradas dentro do dashboard.
+
 ![Tabelas](Imagens/modelagem.png)
 
 O dashboard foi desenvolvido com o objetivo de transformar dados operacionais em informações estratégicas, permitindo ao gestor visualizar o desempenho do negócio e apoiar o processo de tomada de decisão. Após criar a estrutura dos cards e gráficos, o design do dashboard foi construido no figma, a fim de ter um acabamento gráfico mais agradável estéticamente e funcional.
+
+![Dashboard Esqueleto](Imagens/dashboard_esqueleto.png)
 
 Os indicadores foram divididos em três perspectivas principais:
 
@@ -85,28 +89,40 @@ Os indicadores foram divididos em três perspectivas principais:
 
 Para explorar o dashboard completo, incluindo filtros e interações disponíveis no Power BI, acesse: **[Abrir Dashboard Interativo](https://app.powerbi.com/view?r=eyJrIjoiNjljNTg0MGItZjg2YS00NzA2LThmZTAtOGMzZTM0YmFhMzViIiwidCI6IjVkZDNjMWFmLTE3MDctNGQyMy04M2U2LTJmNjM4NWM2M2FmNiJ9)**
 
-# Principais Descobertas 🚀
+## Principais Descobertas 🚀
 
-## - Queda progressiva de vendas
+### - Queda progressiva de vendas
 
-Foi observada redução contínua, Tanto o volume de vendas quanto o faturamento apresentaram retração.
+Foi observada redução contínua, tanto o volume de vendas quanto o faturamento apresentaram retração.
 
 Fevereiro > Março > Abril
 
 Indício: Possível perda de recorrência dos clientes cadastrados, perda de engajamento e ausência de mecanismos de fidelização..
 
-## - Dependência comercial concentrada
+### - Dependência comercial concentrada
 A análise dos itens mostrou alta participação de cervejas entre os produtos mais vendidos, isso sugere:
 
 •	concentração de receita 
 •	risco operacional 
-•	oportunidade de venda cruzada 
+•	oportunidade de venda cruzada
 
-# 💡 Propostas sugeridas
+## - Redução da atividade dos clientes cadastrados
+
+Foi identificada uma diminuição do número de clientes únicos ativos ao longo do trimestre analisado.
+
+Além da queda no faturamento, houve redução na participação dos clientes recorrentes, indicando possível perda de retenção.
+
+Indícios:
+
+• redução da frequência de compras
+• aumento do intervalo entre visitas
+• enfraquecimento do relacionamento com clientes cadastrados
+
+## Propostas sugeridas 💡
 
 Com base nos resultados encontrados foram propostas algumas ações:
 
-## - Campanha de reativação
+### - Campanha de reativação
 
 Criar campanhas para clientes sem compras nos últimos 30 dias:
 
@@ -116,7 +132,7 @@ Exemplo:
 
 Oferta de descontos ou benefícios específicos.
 
-## - Programa de fidelidade
+### - Programa de fidelidade
 
 Criar incentivo de recorrência:
 
@@ -124,7 +140,7 @@ Criar incentivo de recorrência:
 - Geração de cupom para próxima visita
 - Estímulo à segunda compra
 
-## - Cross-selling
+### - Cross-selling
 
 Reposicionar produtos de maior demanda:
 
