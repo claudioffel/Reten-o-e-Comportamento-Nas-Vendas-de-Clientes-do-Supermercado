@@ -16,7 +16,6 @@ Analisar o comportamento de compra dos clientes, identificar possíveis causas p
 ## Tecnologias Utilizadas 🛠
 - SQL
 - Excel
-- Python
 - Power Bi
 - DAX
 - Figma
@@ -69,7 +68,12 @@ where c.cliente > 0 and p.cancelado = 0 and p.DATACUPOM > '2026-03-31' AND p.DAT
 
 ## - Criação do Dashboard
 
-Após a etapa de extração, os dados foram organizados e exportados para planilhas em excel. Em seguida, as bases foram importadas para o Power BI, onde foi realizada a modelagem dos dados, criação de colunas calculadas e desenvolvimento de medidas DAX para construção dos indicadores analíticos. O dashboard foi desenvolvido com o objetivo de transformar dados operacionais em informações estratégicas, permitindo ao gestor visualizar o desempenho do negócio e apoiar o processo de tomada de decisão.
+Após a etapa de extração, os dados foram organizados e exportados para planilhas em excel. Em seguida, as bases foram importadas para o Power BI, onde foi realizada a modelagem dos dados, criação de colunas calculadas e desenvolvimento de medidas DAX para construção dos indicadores analíticos. 
+
+Segue abaixo a modelagem feita no power bi, com o objetivo de estruturar os relacionamentos entre as tabelas e permitir análises mais dinâmicas e integradas dentro do dashboard.
+![Tabelas](Imagens/modelagem.png)
+
+O dashboard foi desenvolvido com o objetivo de transformar dados operacionais em informações estratégicas, permitindo ao gestor visualizar o desempenho do negócio e apoiar o processo de tomada de decisão. Após criar a estrutura dos cards e gráficos, o design do dashboard foi construido no figma, a fim de ter um acabamento gráfico mais agradável estéticamente e funcional.
 
 Os indicadores foram divididos em três perspectivas principais:
 
@@ -77,3 +81,57 @@ Os indicadores foram divididos em três perspectivas principais:
 - **Financeira:** faturamento, ticket médio e evolução mensal das receitas;
 - **Comportamental:** perfil de consumo, recorrência, produtos mais vendidos e padrões de compra.
 
+![Dashboard](Imagens/dashboard.png)
+
+Para explorar o dashboard completo, incluindo filtros e interações disponíveis no Power BI, acesse: **[Abrir Dashboard Interativo](https://app.powerbi.com/view?r=eyJrIjoiNjljNTg0MGItZjg2YS00NzA2LThmZTAtOGMzZTM0YmFhMzViIiwidCI6IjVkZDNjMWFmLTE3MDctNGQyMy04M2U2LTJmNjM4NWM2M2FmNiJ9)**
+
+# Principais Descobertas 🚀
+
+## - Queda progressiva de vendas
+
+Foi observada redução contínua, Tanto o volume de vendas quanto o faturamento apresentaram retração.
+
+Fevereiro > Março > Abril
+
+Indício: Possível perda de recorrência dos clientes cadastrados, perda de engajamento e ausência de mecanismos de fidelização..
+
+## - Dependência comercial concentrada
+A análise dos itens mostrou alta participação de cervejas entre os produtos mais vendidos, isso sugere:
+
+•	concentração de receita 
+•	risco operacional 
+•	oportunidade de venda cruzada 
+
+# 💡 Propostas sugeridas
+
+Com base nos resultados encontrados foram propostas algumas ações:
+
+## - Campanha de reativação
+
+Criar campanhas para clientes sem compras nos últimos 30 dias:
+
+Exemplo:
+
+**"Volte para o mercado"**
+
+Oferta de descontos ou benefícios específicos.
+
+## - Programa de fidelidade
+
+Criar incentivo de recorrência:
+
+- Compras acima de R$100
+- Geração de cupom para próxima visita
+- Estímulo à segunda compra
+
+## - Cross-selling
+
+Reposicionar produtos de maior demanda:
+
+Exemplo:
+
+Cerveja + carvão + carnes + petiscos + itens para churrasco
+
+Objetivo:
+
+Transformar compras isoladas em compras de cesta completa.
