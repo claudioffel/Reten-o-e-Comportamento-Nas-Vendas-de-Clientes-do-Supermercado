@@ -1,7 +1,7 @@
 # Retenção e Comportamento Nas Vendas de Clientes de um Supermercado
 ---
 ## Sobre o Projeto 📌
-Este projeto apresenta uma análise de retenção e comportamento de compra de clientes de um supermercado durante um trimestre, o nome dos clientes foram anonimizados para preservação da confidencialidade. O cenário analisado envolve um varejista que identificou uma redução nas vendas realizadas para clientes cadastrados ao longo dos últimos meses, levantando a hipótese de perda de recorrência e diminuição do engajamento dos consumidores.
+Este projeto apresenta uma análise de retenção e comportamento de compra de clientes de um supermercado durante um trimestre, o nome dos clientes foram anonimizados para preservação da confidencialidade. O cenário analisado envolve um varejista que identificou uma redução nas vendas realizadas para clientes cadastrados ao longo dos últimos meses.
 
 ## Objetivo 🎯
 Analisar o comportamento de compra dos clientes, identificar possíveis causas para a queda no faturamento e propor soluções para a resolução do problema. Será necessario construir um fluxo analítico capaz de:
